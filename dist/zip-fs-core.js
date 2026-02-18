@@ -2687,6 +2687,11 @@
 
 	let webWorkerSupported, webWorkerURI, webWorkerOptions;
 	let transferStreamsSupported = true;
+	try {
+		transferStreamsSupported = typeof structuredClone == FUNCTION_TYPE && structuredClone(new DOMException("", "AbortError")).code !== UNDEFINED_VALUE;
+	} catch {
+		// ignored
+	}
 	let initModule = () => { };
 
 	class CodecWorker {
