@@ -159,7 +159,7 @@
     "eslint": "^10.0.0",
     "http-server": "^14.1.1",
     "rollup": "^4.57.1",
-    "typedoc": "^0.28.16",
+    "typedoc": "^0.28.17",
     "typedoc-plugin-markdown": "^4.10.0"
   }
 }
